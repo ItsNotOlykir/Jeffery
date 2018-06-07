@@ -4,6 +4,9 @@ exports.run = (client, message, params) => {
 		return;
 	const code = params.join(" ");
 	const util = require("util");
+	if (code < 1) {
+		message.channel.send("Please input some code!")
+	} else
 	if (code.includes("client.token")) {
 		message.channel.send("Unable to eval that code!");
 	} else {

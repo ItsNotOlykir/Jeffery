@@ -1,7 +1,7 @@
 const snek = require('snekfetch')
 exports.run = (client, message, params) => {
 	const search = params.join("+")
-	snek.get(`http://api.giphy.com/v1/stickers/search?q=${search}&api_key=${client.settings.giphyKey}`)
+	snek.get(`http://api.giphy.com/v1/stickers/search?q=${search}&api_key=${client.settings.keys.giphy}`)
 		.then(r => message.channel.send({
 			embed: {
 				title: `Success!`,

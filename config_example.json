@@ -1,7 +1,8 @@
 {
-    "token": "YoureToken",
-    "prefix": "-",
-    "SupportServer": "Support Server Link",
-    "giphyKey": "giphy api key"
+  "token": "YourToken",
+  "prefix": "-",
+  "SupportServer": "YourSupportServer",
+  "keys": {
+    "giphy": "YourApiKey"
   }
-  
+}
