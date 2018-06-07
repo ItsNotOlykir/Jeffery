@@ -3,7 +3,7 @@ exports.run = (client, message, params) => {
 	const commandNames = Array.from(client.commands.keys())
 	const longest = commandNames.reduce((long, str) => Math.max(long, str.length), 0);
 	const args = params[0]
-	const command = client.commands.get(args).info
+	const command = client.commands.get(args)
 	if (args) {
 
 		if (command === undefined) {
@@ -16,9 +16,9 @@ exports.run = (client, message, params) => {
 		} else {
 			message.channel.send({
 				embed: {
-					title: `Info for **${command.name}**.`,
+					title: `Info for **${command.info.name}**.`,
 					color: 2197497,
-					description: `Description: **${command.desc}**\nUsage: **${command.use}**`
+					description: `Description: **${command.info.desc}**\nUsage: **${command.info.use}**`
 				}
 			})
 		}
@@ -38,5 +38,6 @@ exports.run = (client, message, params) => {
 
 exports.info = {
 	name: "help",
-	desc: "Get the bots commands!"
+	desc: "Get the bots commands!",
+	use: "-help \'command\'"
 };
