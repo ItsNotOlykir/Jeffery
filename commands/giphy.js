@@ -14,5 +14,6 @@ exports.run = (client, message, params) => {
 
 exports.info = {
 	name: "giphy",
-	desc: 'Search giphy'
+	desc: 'Search giphy',
+	use: '-giphy \'search\''
 }

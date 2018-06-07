@@ -31,5 +31,6 @@ exports.run = (client, message, params) => {
 };
 exports.info = {
 	name: "kick",
-	desc: "Kick someone from the server"
+	desc: "Kick someone from the server",
+	use: '-kick \'member  | id\''
 };

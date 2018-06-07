@@ -19,5 +19,6 @@ exports.run = (client, msg, args) => {
 
 exports.info = {
 	name: "stats",
-	desc: "Get the bot's status!"
+	desc: "Get the bot's status!",
+	use: '-stats'
 };

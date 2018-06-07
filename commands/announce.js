@@ -9,5 +9,6 @@ exports.run = (client, message, params) => {
 }
 exports.info = {
 	name: 'announce',
-	desc: 'Annouce something to the server'
+	desc: 'Annouce something to the server',
+	use: `-announce \'message\'`
 }

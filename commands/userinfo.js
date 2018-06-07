@@ -73,5 +73,6 @@ exports.run = (client, msg, args) => {
 
 exports.info = {
 	name: "userinfo",
-	desc: "See a user's info"
+	desc: "See a user's info",
+	use: '-userinfo \'mention\''
 };

@@ -16,5 +16,6 @@ exports.run = (client, message, params) => {
 
 exports.info = {
 	name: "guildinfo",
-	desc: "Gather information about this guild"
+	desc: "Gather information about this guild",
+	use: '-guildinfo'
 };

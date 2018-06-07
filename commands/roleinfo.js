@@ -16,5 +16,6 @@ exports.run = (client, message, params) => {
 }
 exports.info = {
 	name: "roleinfo",
-	desc: "Display info from a role"
+	desc: "Display info from a role",
+	use: '-roleinfo \'name\''
 }

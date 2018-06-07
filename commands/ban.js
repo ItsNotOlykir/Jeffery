@@ -31,5 +31,6 @@ exports.run = (client, message, params) => {
 
 exports.info = {
 	name: "ban",
-	desc: "Ban a member from the guild"
+	desc: "Ban a member from the guild",
+	use: "-ban \'member | id\'"
 };
