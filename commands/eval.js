@@ -1,5 +1,5 @@
+const snek = require('snekfetch')
 exports.run = (client, message, params) => {
-	const snek = require('snekfetch')
 	if (message.author.id !== "365877861397037059")
 		return;
 	const code = params.join(" ");
