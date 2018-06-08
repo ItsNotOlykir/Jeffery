@@ -1,4 +1,4 @@
-<iframe src="https://discordapp.com/widget?id=452370435498311691&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
+
 # Jeffery
 
 To start the bot, `cd` into the directory that it is in, in this case it is in, `home/Desktop/Jeffery`, so we would do
