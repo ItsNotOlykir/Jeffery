@@ -1,3 +1,4 @@
+// Require all modules
 const Discord = require("discord.js");
 const client = new Discord.Client();
 const settings = require("./config.json");
@@ -5,9 +6,12 @@ const fs = require("fs");
 const hastebin = require("hastebin-gen");
 const snekfetch = require("snekfetch");
 require("./util/eventLoader")(client);
+// Set client vars
 client.settings = settings;
 client.commands = new Discord.Collection();
 client.functions = new Discord.Collection();
+client.supportServer = settings.SupportServer
+// Command handler
 fs.readdir("./commands/", (err, files) => {
 	if (err) console.error(err);
 	console.log(`Loading a total of ${files.length} commands.`);
@@ -17,7 +21,7 @@ fs.readdir("./commands/", (err, files) => {
 		client.commands.set(props.info.name, props);
 	});
 });
-
+// Function handler
 fs.readdir(`./functions/`, (err, files) => {
 	if (err) console.log(err);
 	console.log(`Loading a total of ${files.length} functions.`);
@@ -27,5 +31,5 @@ fs.readdir(`./functions/`, (err, files) => {
 		client.functions.set(functions.info.name, functions);
 	});
 });
-client.supportServer = settings.SupportServer
+// Bot login
 client.login(settings.token);
