@@ -2,6 +2,7 @@
   "token": "YourToken",
   "prefix": "-",
   "SupportServer": "YourSupportServer",
+  "ownerID": "YourID",
   "keys": {
     "giphy": "YourApiKey"
   }

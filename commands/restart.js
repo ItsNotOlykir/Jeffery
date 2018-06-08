@@ -1,5 +1,5 @@
 exports.run = (client, message) => {
-	if (message.author.id !== "365877861397037059") return
+	if (message.author.id !== client.ownerID) return
 	message.channel.send('Restarting!')
 	setTimeout(function() {
 		process.kill(0)

@@ -1,6 +1,6 @@
 const snek = require('snekfetch')
 exports.run = (client, message, params) => {
-	if (message.author.id !== "365877861397037059")
+	if (message.author.id !== client.ownerID)
 		return;
 	const code = params.join(" ");
 	const util = require("util");

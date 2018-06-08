@@ -11,6 +11,7 @@ client.settings = settings;
 client.commands = new Discord.Collection();
 client.functions = new Discord.Collection();
 client.supportServer = settings.SupportServer
+client.ownerID = settings.ownerID
 // Command handler
 fs.readdir("./commands/", (err, files) => {
 	if (err) console.error(err);
