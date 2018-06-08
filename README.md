@@ -14,3 +14,4 @@ and for pm2 used
 pm2 start app.js --name Jeffery
 ```
 The bot is fully modular, you can add commands, or remove commands, just by deleting a file. you can also create your own commands, but you have to know a little javascript
+https://discordapp.com/api/guilds/452370435498311691/widget.json
