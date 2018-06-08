@@ -1,4 +1,4 @@
-
+https://img.shields.io/discord/452370435498311691.svg?style=for-the-badge
 # Jeffery
 
 To start the bot, `cd` into the directory that it is in, in this case it is in, `home/Desktop/Jeffery`, so we would do
