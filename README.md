@@ -1,4 +1,3 @@
-https://discordapp.com/widget?id=452370435498311691&theme=dark
 # Jeffery
 
 To start the bot, `cd` into the directory that it is in, in this case it is in, `home/Desktop/Jeffery`, so we would do
