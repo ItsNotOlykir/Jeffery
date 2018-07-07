@@ -14,3 +14,15 @@ and for pm2 used
 pm2 start app.js --name Jeffery
 ```
 The bot is fully modular, you can add commands, or remove commands, just by deleting a file. you can also create your own commands, but you have to know a little javascript
+
+If you would like the create a new command, use the following code,
+```js
+exports.run = (client, message) => {
+};
+
+exports.info = {
+	name: "stats",
+	desc: "Get the bot's status!",
+	use: '-stats'
+};
+```
