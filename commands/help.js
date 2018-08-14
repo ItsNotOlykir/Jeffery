@@ -33,7 +33,7 @@ exports.run = (client, message, params) => {
 			description: `${client.commands.map(c => `**${client.settings.prefix}${c.info.name}**${ " ".repeat(longest - c.info.name.length)}   || ${c.info.desc}`).join("\n")}`,
 			footer: {
 				//icon_url: client.user.avatarURL,
-				text: `Need support? Click (here)[${client.supportServer}]`
+				text: `Need support? Click [here](${client.supportServer})`
 			  }
 		}
 	})
