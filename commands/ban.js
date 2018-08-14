@@ -2,10 +2,7 @@ const moment = require("moment");
 require("moment-duration-format");
 exports.run = (client, message, params) => {
 	const args = params.join(" ");
-	if (!args) {
-		message.channel.send("Please specify a user!");
-		return;
-	}
+
 	const member = message.mentions.members.first() || message.guild.members.get(args[0]);
 	const reason = args.split(`<@${member.id}> `).join(" ");
 	if (!args) {
