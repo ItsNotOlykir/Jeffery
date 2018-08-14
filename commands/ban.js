@@ -3,11 +3,13 @@ require("moment-duration-format");
 exports.run = (client, message, params) => {
 	const args = params.join(" ");
 
+
+	if (!args) {
+		return message.channel.send("Please specify a user!");
+	}
 	const member = message.mentions.members.first() || message.guild.members.get(args[0]);
 	const reason = args.split(`<@${member.id}> `).join(" ");
-	if (!args) {
-		message.channel.send("Please specify a user!");
-	} else if (!message.member.hasPermission("BAN")) {
+	if (!message.member.hasPermission("BAN")) {
 		message.channel.send("It seems you're not allowed to ban users!");
 		return;
 	} else if (member.bannable === false) {
