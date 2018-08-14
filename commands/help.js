@@ -30,7 +30,8 @@ exports.run = (client, message, params) => {
 			title: "Commands!",
 			url: client.supportServer,
 			color: 2197497,
-			description: `${client.commands.map(c => `**${client.settings.prefix}${c.info.name}**${ " ".repeat(longest - c.info.name.length)}   || ${c.info.desc}`).join("\n")}`
+			description: `${client.commands.map(c => `**${client.settings.prefix}${c.info.name}**${ " ".repeat(longest - c.info.name.length)}   || ${c.info.desc}`).join("\n")}`,
+			footer: `Need support? Click [here](${client.supportServer})`
 		}
 	})
 
