@@ -12,7 +12,7 @@ exports.run = (client, message, params) => {
 	const reason = args.split(`<@${member.id}> `).join(" ");
 
 	if (!message.member.hasPermission("KICK_MEMBERS")) {
-		message.channel.send("It seems you're not allowed to kick users!");
+		message.channel.send(client.settings.invalidPermMsg);
 		return;
 	} else if (member.kickable === false) {
 		message.channel.send(`I'm sorry, but **${member.user.tag}** is not able to be kicked!`);

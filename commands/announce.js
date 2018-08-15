@@ -1,6 +1,6 @@
 exports.run = (client, message, params) => {
 	if (!message.member.hasPermission("PIN_MESSAGES")) {
-		message.channel.send("You cannot use this command!");
+		message.channel.send(client.settings.invalidPermMsg);
 	} else {
 		const messageText = params.join(" ");
 		message.delete()
