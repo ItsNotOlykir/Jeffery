@@ -8,8 +8,7 @@ const snekfetch = require("snekfetch");
 require("./util/eventLoader")(client);
 // Set client vars
 client.settings = settings;
-// client.commands = new Discord.Collection();
-client.commands = new Array
+client.commands = new Discord.Collection();
 client.functions = new Discord.Collection();
 client.supportServer = settings.SupportServer
 client.ownerID = settings.ownerID
